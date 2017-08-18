@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE ncx PUBLIC "-//NISO//DTD ncx 2005-1//EN"
+        "http://www.daisy.org/z3986/2005/ncx-2005-1.dtd">
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+    <head>
+    </head>
+    <docTitle>
+        <text><%= title %></text>
+    </docTitle>
+    <docTitle>
+        <text><%= author %></text>
+    </docTitle>
+    <navMap>
+        <% chapters.forEach(function(chapter, index){ %>
+            <navPoint id="ch<%= index+1 %>" playOrder="<%= index+1 %>">
+                <navLabel>
+                    <text>
+                        <%= chapter.title %>
+                    </text>
+                </navLabel>
+                <content src="book.html#ch<%= index %>" />
+            </navPoint>
+        <% }) %>
+    </navMap>
+</ncx>

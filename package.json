@@ -1,0 +1,27 @@
+{
+  "name": "txt2mobi-node",
+  "version": "1.0.0",
+  "description": "A Node.js convert tool to trans .txt file into mobi. Based on KindleGen.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pingze-github/txt2mobi-node.git"
+  },
+  "author": "wang719695@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pingze-github/txt2mobi-node/issues"
+  },
+  "homepage": "https://github.com/Pingze-github/txt2mobi-node#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "fs-extra": "^4.0.1",
+    "lodash": "^4.17.4"
+  }
+}
